@@ -7,7 +7,9 @@
 
     <key>ProgramArguments</key>
     <array>
-        <string>/Users/shailendrakaushik/Documents/Python/AlgoTrading/StockScreener_2/scripts/run_db_updates.sh</string>
+        <string>osascript</string>
+        <string>-e</string>
+        <string>do shell script "/Users/shailendrakaushik/Documents/Python/AlgoTrading/StockScreener_2/scripts/run_db_updates.sh &amp;"</string>
     </array>
 
     <key>StartCalendarInterval</key>
@@ -27,9 +29,6 @@
     <string>/Users/shailendrakaushik/Library/Logs/StockScreener/launchd.err.log</string>
 
     <key>RunAtLoad</key>
-    <false/>
-
-    <key>KeepAlive</key>
     <false/>
 </dict>
 </plist>

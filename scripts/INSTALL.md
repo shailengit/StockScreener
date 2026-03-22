@@ -1,6 +1,6 @@
 # Database Scheduler Installation
 
-## One-Time Setup
+## One-Time Setup (using LaunchAgent)
 
 1. Copy the plist to LaunchAgents:
    ```bash
@@ -14,7 +14,7 @@
 
 ## Verify It's Working
 
-Check the next scheduled run:
+Check if loaded:
 ```bash
 launchctl list | grep stockscreener
 ```
@@ -30,3 +30,10 @@ tail -f ~/Library/Logs/StockScreener/update_*.log
 - **Stop:** `launchctl stop com.stockscreener.db-updater`
 - **Uninstall:** `launchctl unload ~/Library/LaunchAgents/com.stockscreener.db-updater.plist`
 - **Reschedule (after edits):** `launchctl unload ~/Library/LaunchAgents/com.stockscreener.db-updater.plist && launchctl load ~/Library/LaunchAgents/com.stockscreener.db-updater.plist`
+
+## Notes
+
+- Runs daily at 6PM
+- Uses osascript to run with full user permissions (bypasses macOS sandbox restrictions)
+- Logs saved to ~/Library/Logs/StockScreener/
+- You'll receive macOS notifications on completion
