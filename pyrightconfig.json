@@ -1,0 +1,14 @@
+{
+  "pythonPath": "/Users/shailendrakaushik/Documents/Python/AlgoTrading/StockScreener_2/venv/bin/python3",
+  "venvPath": "/Users/shailendrakaushik/Documents/Python/AlgoTrading/StockScreener_2",
+  "venv": "venv",
+  "pythonVersion": "3.13",
+  "typeCheckingMode": "basic",
+  "reportMissingTypeStubs": false,
+  "include": ["**/*.py"],
+  "executionEnvironments": [
+    {
+      "root": "/Users/shailendrakaushik/Documents/Python/AlgoTrading/StockScreener_2",
+    },
+  ],
+}
